@@ -6,23 +6,23 @@ screen = pygame.display.set_mode((1011, 600))
 
 # player lists
 walk_right = [
-    pygame.image.load("images/player_right/player_right1.png").convert_alpha(),
-    pygame.image.load("images/player_right/player_right2.png").convert_alpha(),
-    pygame.image.load("images/player_right/player_right3.png").convert_alpha(),
-    pygame.image.load("images/player_right/player_right4.png").convert_alpha(),
-    pygame.image.load("images/player_right/player_right5.png").convert_alpha(),
-    pygame.image.load("images/player_right/player_right5.png").convert_alpha(),
-    pygame.image.load("images/player_right/player_right6.png").convert_alpha()
+    pygame.image.load("images/player_right/ninja_right1.png").convert_alpha(),
+    pygame.image.load("images/player_right/ninja_right2.png").convert_alpha(),
+    pygame.image.load("images/player_right/ninja_right3.png").convert_alpha(),
+    pygame.image.load("images/player_right/ninja_right4.png").convert_alpha(),
+    pygame.image.load("images/player_right/ninja_right5.png").convert_alpha(),
+    pygame.image.load("images/player_right/ninja_right5.png").convert_alpha(),
+    pygame.image.load("images/player_right/ninja_right6.png").convert_alpha()
 ]
 
 walk_left = [
-    pygame.image.load("images/player_left/player_left1.png").convert_alpha(),
-    pygame.image.load("images/player_left/player_left2.png").convert_alpha(),
-    pygame.image.load("images/player_left/player_left3.png").convert_alpha(),
-    pygame.image.load("images/player_left/player_left4.png").convert_alpha(),
-    pygame.image.load("images/player_left/player_left5.png").convert_alpha(),
-    pygame.image.load("images/player_left/player_left5.png").convert_alpha(),
-    pygame.image.load("images/player_left/player_left6.png").convert_alpha()
+    pygame.image.load("images/player_left/ninja_left1.png").convert_alpha(),
+    pygame.image.load("images/player_left/ninja_left2.png").convert_alpha(),
+    pygame.image.load("images/player_left/ninja_left3.png").convert_alpha(),
+    pygame.image.load("images/player_left/ninja_left4.png").convert_alpha(),
+    pygame.image.load("images/player_left/ninja_left5.png").convert_alpha(),
+    pygame.image.load("images/player_left/ninja_left5.png").convert_alpha(),
+    pygame.image.load("images/player_left/ninja_left6.png").convert_alpha()
 ]
 
 # enemy lists
