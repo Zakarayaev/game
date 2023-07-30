@@ -4,7 +4,7 @@ import lists
 
 def background_anim():  # this function will be move the background
     variables.background_x -= 3
-    if variables.background_x == -1003:
+    if variables.background_x == -1000:
         variables.background_x = 0
 
 

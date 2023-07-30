@@ -23,8 +23,9 @@ while running:
             # pygame.quit()
 
     # background output
-    screen.blit(variables.background, (variables.background_x, 0))
-    screen.blit(variables.background, (variables.background_x + 1003, 0))
+    second2 = screen.blit(variables.background, (variables.background_x, 0))
+    second = screen.blit(variables.background,
+                         (variables.background_x + 1002, 0))
 
     # background animation
     functions.background_anim()
@@ -34,7 +35,7 @@ while running:
     functions.player_jump_anim()
     player_movement.player_jump()
     player_movement.player_movement()
-    player_movement.test()
+    player_movement.player_animation_A_D()
 
     # ninja
     functions.delete_ninja()

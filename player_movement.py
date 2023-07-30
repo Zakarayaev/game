@@ -12,11 +12,13 @@ def player_movement():
         variables.jump_x -= variables.player_speed
 
 
-def test():
-    import main
+def player_animation_A_D():  # Animation of the player depending
+    import main   # on the pressing of the buttons
     import lists
+
     global keys
     keys = pygame.key.get_pressed()  # this variable to track keystroke
+
     if not keys[pygame.K_SPACE]:
         if keys[pygame.K_a]:  # this loop for playr's left
             main.screen.blit(
@@ -65,21 +67,3 @@ def player_jump():
             variables.is_jump = False
             variables.jump_count = 9
     variables.player_x = variables.jump_x
-
-    # def test():
-    #     import main
-    #     import lists
-    #     global keys
-    #     keys = pygame.key.get_pressed()  # this variable to track keystroke
-    #     if not keys[pygame.K_SPACE]:
-    #         if keys[pygame.K_a]:  # this loop for playr's left
-    #             main.screen.blit(
-    #                 lists.walk_left[variables.player_anim_count],
-    #                 (variables.player_x, variables.player_y)
-    #                 )
-    #         else:
-    #             global player_walk_right
-    #             player_walk_right = main.screen.blit(
-    #                 lists.walk_right[variables.player_anim_count],
-    #                 (variables.player_x, variables.player_y)
-    #             )
