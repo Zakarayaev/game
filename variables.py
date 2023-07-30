@@ -31,3 +31,6 @@ jump_count = 7
 ninja_anim_count = 0
 ninja_x = 800
 ninja_y = 305
+
+
+keys = pygame.key.get_pressed()  # this variable to track keystroke

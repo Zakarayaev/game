@@ -7,16 +7,16 @@ def player_movement():
     global keys
     keys = pygame.key.get_pressed()  # this variable to track keystroke
     if keys[pygame.K_d] and variables.player_x < 270:
-        variables.player_x += variables.player_speed
+        variables.jump_x += variables.player_speed
     elif keys[pygame.K_a] and variables.player_x > 50:
-        variables.player_x -= variables.player_speed
+        variables.jump_x -= variables.player_speed
 
 
 def test():
     import main
     import lists
     global keys
-    keys = pygame.key.get_pressed()
+    keys = pygame.key.get_pressed()  # this variable to track keystroke
     if not keys[pygame.K_SPACE]:
         if keys[pygame.K_a]:  # this loop for playr's left
             main.screen.blit(
@@ -36,9 +36,9 @@ def player_jump():
     import lists
 
     pygame.init()
-    global keys
     global player_walk_right
-    keys = pygame.key.get_pressed()
+    global keys
+    keys = pygame.key.get_pressed()  # this variable to track keystroke
     if not variables.is_jump:
         if keys[pygame.K_SPACE]:
             variables.is_jump = True
@@ -65,3 +65,21 @@ def player_jump():
             variables.is_jump = False
             variables.jump_count = 9
     variables.player_x = variables.jump_x
+
+    # def test():
+    #     import main
+    #     import lists
+    #     global keys
+    #     keys = pygame.key.get_pressed()  # this variable to track keystroke
+    #     if not keys[pygame.K_SPACE]:
+    #         if keys[pygame.K_a]:  # this loop for playr's left
+    #             main.screen.blit(
+    #                 lists.walk_left[variables.player_anim_count],
+    #                 (variables.player_x, variables.player_y)
+    #                 )
+    #         else:
+    #             global player_walk_right
+    #             player_walk_right = main.screen.blit(
+    #                 lists.walk_right[variables.player_anim_count],
+    #                 (variables.player_x, variables.player_y)
+    #             )

@@ -20,7 +20,7 @@ def player_anim():  # this function wil be iterate the list walk_right and so
 
 
 def player_jump_anim():  # for animayion of player jump
-    if variables.jump_right_anim_count == 8:
+    if variables.jump_right_anim_count == 19:
         variables.jump_right_anim_count = 0
     else:
         variables.jump_right_anim_count += 1
