@@ -20,9 +20,30 @@ walk_left = [
     pygame.image.load("images/player_left/ninja_left2.png").convert_alpha(),
     pygame.image.load("images/player_left/ninja_left3.png").convert_alpha(),
     pygame.image.load("images/player_left/ninja_left4.png").convert_alpha(),
-    pygame.image.load("images/player_left/ninja_left5.png").convert_alpha(),
+    pygame.image.load("images/player_left/ninja_left4.png").convert_alpha(),
     pygame.image.load("images/player_left/ninja_left5.png").convert_alpha(),
     pygame.image.load("images/player_left/ninja_left6.png").convert_alpha()
+]
+
+jump_right = [
+    pygame.image.load("images/player_jump_right/player_jump_right1.png").
+    convert_alpha(),
+    pygame.image.load("images/player_jump_right/player_jump_right2.png").
+    convert_alpha(),
+    pygame.image.load("images/player_jump_right/player_jump_right3.png").
+    convert_alpha(),
+    pygame.image.load("images/player_jump_right/player_jump_right4.png").
+    convert_alpha(),
+    pygame.image.load("images/player_jump_right/player_jump_right4.png").
+    convert_alpha(),
+    pygame.image.load("images/player_jump_right/player_jump_right4.png").
+    convert_alpha(),
+    pygame.image.load("images/player_jump_right/player_jump_right4.png").
+    convert_alpha(),
+    pygame.image.load("images/player_jump_right/player_jump_right5.png").
+    convert_alpha(),
+    pygame.image.load("images/player_jump_right/player_jump_right6.png").
+    convert_alpha()
 ]
 
 # enemy lists

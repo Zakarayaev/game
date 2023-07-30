@@ -1,6 +1,15 @@
-import pygame
 import variables
 import lists
+
+
+def background_anim():  # this function will be move the background
+    variables.background_x -= 3
+    if variables.background_x == -1003:
+        variables.background_x = 0
+
+
+def background_music():  # for background misic play
+    variables.background_music.play()
 
 
 def player_anim():  # this function wil be iterate the list walk_right and so
@@ -10,43 +19,20 @@ def player_anim():  # this function wil be iterate the list walk_right and so
         variables.player_anim_count += 1
 
 
-# def rect():
-#     import pygame
-#     import main
-#     pygame.init()
-#     player_rect = lists.walk_right[0].get_rect(topleft=(
-#         variables.player_x,
-#         variables.player_y
-#         ))
-#     if main.ninja_enemy_in_game:
-#         for element in main.ninja_enemy_in_game:
-#             main.screen.blit(main.ninja_enemy[0], element)
-#             element.x -= 10
-
-#     def ninja_anim():
-#         if variables.ninja_anim_count == 21:
-#             variables.ninja_anim_count = 0
-#         else:
-#             variables.ninja_anim_count += 1
-#         if player_rect.colliderect(element):
-#             print("You lose")
-#             print("Do you want to restart?")
-#     ninja_anim()
+def player_jump_anim():  # for animayion of player jump
+    if variables.jump_right_anim_count == 8:
+        variables.jump_right_anim_count = 0
+    else:
+        variables.jump_right_anim_count += 1
 
 
-def test():
+def delete_ninja():  # for ninja output and delete and animation
     import main
-    pygame.init()
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_a]:  # this loop for left animation of player
-        main.screen.blit(lists.walk_left[variables.player_anim_count],
-                         (variables.player_x, variables.player_y))
-    else:  # and this loop for right animation of player
-        main.screen.blit(lists.walk_right[variables.player_anim_count],
-                         (variables.player_x, variables.player_y))
 
+    main.screen.blit(
+        lists.ninja_enemy[variables.ninja_anim_count],
+        (variables.ninja_x, variables.ninja_y))
 
-def delete_ninja():
     def ninja_movement():
         if variables.ninja_anim_count == 21:
             variables.ninja_anim_count = 0
@@ -57,13 +43,3 @@ def delete_ninja():
         # del ninja_blit
         print("Ninja was deleted")
     ninja_movement()
-
-
-def background_anim():  # this function will be move the background
-    variables.background_x -= 3
-    if variables.background_x == -1011:
-        variables.background_x = 0
-
-
-def background_music():
-    variables.background_music.play()
